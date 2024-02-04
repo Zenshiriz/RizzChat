@@ -1,0 +1,7 @@
+.feed{
+    flex: 4.5;
+    background-color: aliceblue;
+}
+.feed-wrapper{
+    margin: 20px;
+}
