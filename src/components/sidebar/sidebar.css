@@ -50,3 +50,15 @@
     list-style: none;
 }
 
+
+
+@media only screen and (max-width: 48em) {
+ .sidebar.hide-it{
+    display: none;
+ }
+}
+@media only screen and (max-width: 40em) {
+    .sidebar{
+      display: none;
+    } 
+}

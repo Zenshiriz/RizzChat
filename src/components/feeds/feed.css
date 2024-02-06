@@ -5,3 +5,9 @@
 .feed-wrapper{
     margin: 20px;
 }
+
+@media only screen and (max-width: 40em) {
+  .feed{
+    flex: 12;
+  }
+}

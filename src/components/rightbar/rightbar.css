@@ -71,3 +71,22 @@ font-weight: 300;
   margin-bottom: 20px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 48em) {
+
+  .rightbar {
+   display: none;
+  }
+  .rightbar.dont-hide{
+    display: flex;
+  } 
+  .rightbar-followings{
+    gap: 10px;
+  }
+  .rightbar-wrapper{
+    padding: 10px 25px 0;
+  }
+}
+@media only screen and (min-width: 40em) {
+  
+}

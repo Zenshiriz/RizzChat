@@ -8,7 +8,7 @@ export default function Profile() {
     <>
       <Navbar />
       <div className="profile">
-        <Sidebar />
+        <Sidebar profile />
         <div className="profile-right">
           <div className="profile-right-top">
             <div className="profile-cover">

@@ -11,9 +11,9 @@ import { MdSchool } from "react-icons/md";
 import {Users} from "../../dummyData"
 import CloseFriend from "../closeFriend/CloseFriend";
 
-export default function Sidebar() {
+export default function Sidebar({profile}) {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${profile ? "hide-it" : null}`}>
       <div className="sidebar-wrapper">
         <ul className="sidebar-list">
           <li className="sidebar-list-item">

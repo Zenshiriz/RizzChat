@@ -1,12 +1,16 @@
+.nav-boss{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    background-color: #e5383b;
+}
 .nav-container {
   height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #e5383b;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+ 
 }
 .left-nav {
     flex: 3;
@@ -73,7 +77,7 @@
 }
 .profile-div svg{
     font-size: 18px;
-
+    color: aliceblue;
 }
 .icon-badge{
     position: absolute;
@@ -95,4 +99,57 @@
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+}
+
+.profile-icons.dont-hide{
+    display: none;
+    
+}
+
+@media only screen and (max-width: 48em) {
+.nav-boss{
+    width: 100vw;
+    background-color: #e5383b;
+}
+
+    .left-nav {
+        flex: 4;
+    }
+    .center-nav {
+        flex: 6;
+      }
+      .right-nav{
+        flex: 2;
+      }
+      .link-li{
+        display: none;
+    }
+.min-display-nav{
+    padding:  10px;
+}
+    .profile-icons.dont-hide{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
+  
+      .profile-icons{
+        display: none;
+      }
+
+  }
+@media only screen and (max-width: 40em) {
+    .nav-container{
+        min-width: 100vw;
+    }
+    .left-nav {
+        flex: 4;
+    }
+    .center-nav{
+        flex: 5;
+    }
+    .right-nav{
+        flex: 3;
+      }
+   
 }

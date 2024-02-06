@@ -78,3 +78,21 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 48em) {
+  .login-logo{
+    font-size: 40px !important;
+    text-align: center;
+  }
+  .login-desc {
+    font-size: 16px !important;
+
+  }
+  .login-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+ .login-register-button{
+  font-size: 16px !important;
+ }
+}

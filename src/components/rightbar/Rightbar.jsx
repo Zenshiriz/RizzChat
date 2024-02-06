@@ -79,7 +79,7 @@ export default function Rightbar({ profile }) {
     </>
   )
   return (
-    <div className="rightbar">
+    <div className={`rightbar ${profile ? "dont-hide": null}`}>
       <div className="rightbar-wrapper">
         {profile ?<ProfileRightbar/>: <HomeRightbar/>}
       </div>
